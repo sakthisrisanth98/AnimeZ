@@ -1,0 +1,6 @@
+{
+  "git.enabled": false,
+  "git.decorations.enabled": false,
+  "git.autoRepositoryDetection": false,
+  "scm.diffDecorations": "none"
+}
