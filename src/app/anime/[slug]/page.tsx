@@ -485,7 +485,7 @@ export default function AnimeDetailPage({ params }: PageProps) {
 <div className="mb-3">
   <b>Genres:</b>
   <div className="flex flex-wrap gap-3 mt-3">
-    {anime.genres?.map((genre) => (
+    {anime.genres?.map((genre: string) => (
       <span
         key={genre}
         className="px-3 py-1 bg-[#38364a]/90 rounded-full text-xs text-white/95 
