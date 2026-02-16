@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+body {
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* Hides scrollbar in all browsers */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Mobile-first responsive design for ALL mobile screens */
+@media (max-width: 1099px) {
+  /* Force mobile layout for all screens under 1100px (includes 1080px) */
+  .mobile-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  
+  .mobile-stack {
+    flex-direction: column !important;
+  }
+  
+  .mobile-full-width {
+    width: 100% !important;
+  }
+  
+  .mobile-small-text {
+    font-size: 0.875rem !important;
+  }
+  
+  .mobile-compact {
+    padding: 0.75rem !important;
+  }
+}
+
+/* Ensure consistent mobile experience across all devices */
+@media (max-width: 480px) {
+  /* Extra small phones */
+  .mobile-xs-padding {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  /* Desktop/laptop styles */
+  .desktop-grid {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
+}

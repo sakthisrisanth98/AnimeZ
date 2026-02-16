@@ -1,0 +1,2 @@
+# AnimeZ
+"AnimeZ is the premier anime streaming platform offering the latest and greatest anime series in both SUB and DUB formats with crystal-clear HD quality. From action-packed adventures like Dragon Ball Super to thrilling mysteries like Tokyo Revengers, discover thousands of episodes from top studios. Watch your favorite anime anytime, anywhere with our user-friendly interface and extensive library."
