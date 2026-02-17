@@ -37,7 +37,7 @@ function AnimeGrid({
 </div>
 
 
-      <div className="flex overflow-x-auto space-x-4 md:space-x-8 scroll-smooth px-4 md:px-[30px] pb-2 hide-scrollbar">
+      <div className="flex overflow-x-auto space-x-8 md:space-x-8 scroll-smooth px-4 md:px-[30px] pb-2 hide-scrollbar">
         {animeList.map((anime, index) => (
           <div
             key={index}
@@ -49,12 +49,9 @@ function AnimeGrid({
               alt={anime.title}
               fill
               sizes="(max-width: 768px) 120px, 180px"
-              className="object-cover rounded-md transition duration-300 group-hover:blur-xs"
+              className="object-cover rounded-md group-hover:scale-105 transition-transform duration-200"
             />
-            {/* Centered play icon, shown on hover */}
-            <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <FaPlay className="text-white text-xl md:text-3xl drop-shadow-lg" />
-            </div>
+
             {/* Vertical Title */}
             <div className="absolute -left-[100px] md:-left-[150px] top-1/3 -translate-y-1/2 rotate-[-90deg] text-white text-sm md:text-base font-semibold w-[180px] md:w-[260px] whitespace-nowrap text-left">
               {anime.title}
